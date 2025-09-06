@@ -1,0 +1,20 @@
+# Ignore virtual environments
+.venv/
+venv-benchmark/
+venv-chronos/
+venv-moirai/
+venv-timesfm/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
