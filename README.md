@@ -102,7 +102,7 @@ venv\Scripts\activate
 # Mac/Linux
 source venv/bin/activate
 ```
-Note: Optional but recommended to create a dedicated virtual environment for each model type to ensure isolation and prevent dependency conflicts.
+⚠️ Note: Optional but recommended to create a dedicated virtual environment for each model type to ensure isolation and prevent dependency conflicts.
 
 ### 3. Install required packages
 Install the relevant requirements.txt file according to your intended use case:
@@ -151,7 +151,7 @@ git clone https://github.com/SalesforceAIResearch/uni2ts
 ```
 
 ### 5. Data Acquisition
-NOTE: Non-subscribers must obtain permission from CRSP through legitimate WRDS subscription prior to the use of any CRSP data or information in any materials, research, or products. Redistribution of CRSP data is prohibited.
+⚠️ Note: Non-subscribers must obtain permission from CRSP through legitimate WRDS subscription prior to the use of any CRSP data or information in any materials, research, or products. Redistribution of CRSP data is prohibited.
 
 **WRDS Data Access**:
 1. [WRDS](https://wrds-www.wharton.upenn.edu/) (Wharton Research Data Services)  Access: Required for data retrieval. (requires institutional subscription)
@@ -171,21 +171,26 @@ NOTE: Non-subscribers must obtain permission from CRSP through legitimate WRDS s
 2. Select the 'Adjusted Close' price, falling back to the 'Close' price if necessary.
 
 # Usage
-1. Data Preprocessing and Exploratory Data Analysis (EDA)
+1. **Data Preprocessing and Exploratory Data Analysis (EDA)**
    - Run the Data_Preprocessing_&_EDA.ipynb file to generate cleaned datasets and exploratory plots.
-2. Benchmark Models & TSFMs
+     
+2. **Benchmark Models & TSFMs**
    - Run the relevant models for forecasting daily excess returns and portfolio construction
 
-⚠️ Note for TimesFM: After running the setup, you'll need to manually configure Python 3.11 from the following commands: When prompted, type 2 and press Enter to select Python 3.11 to apply changes.
+      - ⚠️ Note for ALL models: If the .ipynb files do not execute properly in your local environment or Python IDE (e.g., VS Code, PyCharm), this may be due to personal system or environment settings on your device. In such cases, you can run the .ipynb files directly in Google Colab or Jupyter Notebook.
+
+      - ⚠️ Note for Moirai: Running this file will trigger a restart prompt — please accept it to complete the installation and apply all changes correctly.
+
+      - ⚠️ Note for TimesFM: After running the setup, you'll need to manually configure Python 3.11 from the following commands: When prompted, type **2** and press **ENTER** to select Python 3.11 to apply changes.
 ```code
    !sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.11 1 
    !sudo update-alternatives --config python3
 ```
-⚠️ Note for Moirai: Running this file will trigger a restart prompt — please accept it to complete the installation and apply all changes correctly.
 
-3. Diebold Marino Test Results
+3. **Diebold Marino Test Results**
    - Display the pairwise comparison results between benchmark models and TSFM
-4. Cumulative Log Returns Visualisation
+     
+4. **Cumulative Log Returns Visualisation**
    - Display cumulative log return plots of top performing benchmark models and TSFMs
 
 # Additional Information
