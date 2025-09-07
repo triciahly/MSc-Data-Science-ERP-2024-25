@@ -172,10 +172,10 @@ git clone https://github.com/SalesforceAIResearch/uni2ts
 
 # Usage
 1. **Data Preprocessing and Exploratory Data Analysis (EDA)**
-   - Run the Data_Preprocessing_&_EDA.ipynb file to generate cleaned datasets and exploratory plots.
+   - Run the *Data_Preprocessing_&_EDA.ipynb* file to generate cleaned datasets and exploratory plots.
      
 2. **Benchmark Models & TSFMs**
-   - Run the relevant models for forecasting daily excess returns and portfolio construction
+   - Run the relevant *.ipynb* files for each model to perform forecasting of daily excess returns and portfolio construction.
 
       - ⚠️ Note for ALL models: If the .ipynb files do not execute properly in your local environment or Python IDE (e.g., VS Code, PyCharm), this may be due to personal system or environment settings on your device. In such cases, you can run the .ipynb files directly in Google Colab or Jupyter Notebook.
 
@@ -188,10 +188,10 @@ git clone https://github.com/SalesforceAIResearch/uni2ts
 ```
 
 3. **Diebold Marino Test Results**
-   - Display the pairwise comparison results between benchmark models and TSFM
+   - Run the *Diebold_Marino_Test_Results.ipynb* file to display the pairwise comparison results between benchmark models and TSFM
      
 4. **Cumulative Log Returns Visualisation**
-   - Display cumulative log return plots of top performing benchmark models and TSFMs
+   - Run the *Cumulative_Log_Returns.ipynb* to display cumulative log return plots of top performing benchmark models and TSFMs
 
 # Additional Information
 ### Minimum Requirements
